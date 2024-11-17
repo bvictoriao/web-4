@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Выберите товары</h1>
+        <form id="productForm">
+            <div class="product">
+                <label>
+                    <input type="checkbox" value="120" class="product-checkbox"> Пирог с яблоком- 120 руб.
+                </label>
+            </div>
+            <div class="product">
+                <label>
+                    <input type="checkbox" value="80" class="product-checkbox"> Шоколадный кекс - 80 руб.
+                </label>
+            </div>
+            <div class="product">
+                <label>
+                    <input type="checkbox" value="180" class="product-checkbox"> Чизкейк - 180 руб.
+                </label>
+            </div>
+        
+            <button type="button" onclick="calculateTotal()">Выбрать</button>
+        </form>
+        <h2>Общая стоимость: <span id="totalCost">0</span> руб.</h2>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
