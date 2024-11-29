@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+html,
+body {
+    margin: 0;
+    font-family: 'Oswald', system-ui;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: #ff69b4; /* Розовый цвет */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: white; /* Цвет текста в заголовке */
+}
+
+.main {
+    padding-top: 55px;
+    background: #ffc0cb; /* Светло-розовый фон */
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    column-gap: 64px;
+}
+
+.form input {
+    background: transparent;
+    border: 3px solid white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    width: 300px;
+    height: 55px;
+    color: white;
+}
+
+.form input::placeholder {
+    color: white; /* Цвет плейсхолдера */
+    font-family: "Oswald";
+}
+
+.market {
+    max-height: 350px;
+    display: flex;
+    flex-flow: column wrap;
+    column-gap: 132px;
+    row-gap: 17px;
+    margin-top: 84px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+}
+
+.product input[type="checkbox"] {
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: #C4C4C4;
+    border: 4px solid rgb(233, 225, 226);
+}
+
+.product input[type="checkbox"]:checked {
+    appearance: none;
+    width: 23px;
+    height: 23px;
+    background: rgb(255, 105, 180); /* Цвет фона при выборе */
+}
+
+.product label {
+    width: 147px;
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 16px;
+    color: white; /* Цвет текста для товаров */
+}
+
+.long label {
+    width: 203px;
+}
+
+.product_count {
+    background: transparent;
+    border: 3px solid white;
+    outline: none;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    width: 130px;
+    height: 55px;
+    color: white; /* Цвет текста */
+    font-family: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.result {
+    margin-top: 39px;
+}
+
+.result_cost {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    color: white; /* Цвет текста результата */
+}
+
+.send {
+    margin-top: 26px;
+    width: 190px;
+    height: 55px;
+    background-color: #ff69b4; /* Розовая кнопка */
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 20px;
+    border: 3px solid transparent;
+    color: white; /* Цвет текста кнопки */
+}
+
+.send:active {
+    border: 3px solid white;
+    background: transparent;
+    color: white; /* Цвет текста при нажатии */
+}

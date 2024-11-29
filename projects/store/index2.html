@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<nav class="header">COFFEE HOUSE</nav>
+<div class="main">
+    <div class="form">
+        <input type="text" id="last_name" placeholder="Введите Фамилию">
+        <input type="text" id="first_name" placeholder="Введите Имя">
+    </div>
+    <div class="market">
+        <div class="product">
+            <input type="checkbox" id="expresso" data-product-name="Экспрессо" onclick="activateProduct(event)">
+            <label for="expresso">Экспрессо 80р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="80" data-in-cart="0">
+        </div>
+        <div class="product">
+            <input type="checkbox" id="latte" data-product-name="Латте" onclick="activateProduct(event)">
+            <label for="latte">Латте 110р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="110" data-in-cart="0">
+        </div>
+        <div class="product">
+            <input type="checkbox" id="kapuchino" data-product-name="Капучино" onclick="activateProduct(event)">
+            <label for="kapuchino">Капучино 120р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="120" data-in-cart="0">
+        </div>
+        <div class="product">
+            <input type="checkbox" id="americano" data-product-name="Американо" onclick="activateProduct(event)">
+            <label for="americano">Американо 90р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="90" data-in-cart="0">
+        </div>
+        <div class="product long">
+            <input type="checkbox" id="chocolate" data-product-name="Шоколадный кекс" onclick="activateProduct(event)">
+            <label for="chocolate">Шоколадный кекс 80р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="80" data-in-cart="0">
+        </div>
+        <div class="product long">
+            <input type="checkbox" id="chernika" data-product-name="Черничный кекс" onclick="activateProduct(event)">
+            <label for="chernika">Черничный кекс 90р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="90" data-in-cart="0">
+        </div>
+        <div class="product long">
+            <input type="checkbox" id="apple" data-product-name="Яблочный тарт" onclick="activateProduct(event)">
+            <label for="apple">Яблочный тарт 100р.</label>
+            <input type="number" class="product_count" value="0" oninput="updateProductCount(event)" min="0" data-cost="100" data-in-cart="0">
+        </div>
+    </div>
+    <div class="result">
+        <div id="result_cost" class="result_cost">Итого: 0 р.</div>
+        <button class="send" onclick="sendInformation()">ОФОРМИТЬ ЗАКАЗ</button>
+    </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
